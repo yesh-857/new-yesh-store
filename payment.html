@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment | NovaRide Garage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- GA4 + GTM will be added here LATER -->
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="navbar">
+    <div class="logo">NovaRide Garage</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Bikes</a>
+      <a href="cart.html">Cart</a>
+      <a href="payment.html">Payment</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1 class="section-title">Secure payment</h1>
+  <p class="section-subtitle">
+    This is a demo checkout page to practice GA4, GTM, Netlify and cross-domain tracking.
+    No real payments are processed.
+  </p>
+
+  <form>
+    <label for="fullName">Full name</label>
+    <input id="fullName" type="text" placeholder="Yeshwanth" required>
+
+    <label for="email">Email address</label>
+    <input id="email" type="email" placeholder="you@example.com" required>
+
+    <label for="address">Shipping address</label>
+    <input id="address" type="text" placeholder="Flat / Street / City" required>
+
+    <label for="paymentMethod">Payment method</label>
+    <select id="paymentMethod">
+      <option>UPI</option>
+      <option>Credit / Debit Card</option>
+      <option>Net Banking</option>
+      <option>Cash on Delivery</option>
+    </select>
+
+    <label for="cardNumber">Card / UPI ID (demo)</label>
+    <input id="cardNumber" type="text" placeholder="XXXX-XXXX-XXXX-XXXX">
+
+    <button type="submit" class="btn btn-primary" style="margin-top:6px;">
+      Pay now (demo)
+    </button>
+  </form>
+
+  <p style="margin-top:10px; font-size:0.8rem; opacity:0.7;">
+    Submitting this form won’t charge you. Use it to test events in GA4 and GTM.
+  </p>
+</main>
+
+<footer>
+  © 2025 NovaRide Garage • Demo project by Yeshwanth
+</footer>
+</body>
+</html>
